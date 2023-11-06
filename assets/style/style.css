@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+	box-sizing : border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: darkslategray;
+	font-family: 'Nova Cut', cursive;
+}
+
+header{
+    display: inline;
+}
+
+nav {
+	background-color: darkslategray;
+	padding: 5px;
+	position: sticky;
+	top: 0;
+	border-bottom: 5px solid goldenrod;
+	z-index: 1; 
+}
+
+nav a {
+
+	padding: 2px;
+	font-size: 18px;
+	text-decoration: none;
+	color: goldenrod;
+	font-family: 'Special Elite', cursive;
+}
+
+nav a:hover{
+	color: goldenrod;
+	border-bottom: 2px solid goldenrod; 
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 25px;
+}
+
+.bg-img{
+    background-image: url('../img/hogwarts.jpg');  
+    height: 80%;
+    background-size: cover;
+    background-position: 0 -140px;
+    filter: blur(2px) opacity(37%);
+  
+
+}
+
+.bg-text {
+    font-family: 'Kaushan Script', cursive;
+    color: goldenrod;
+    font-size: 70px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+	border-top: 5px solid goldenrod; 
+}
+
+.content{
+    float: left;
+    width: 75%;
+	color: goldenrod;
+}
+
+.content p{
+	text-align: justify;
+}
+
+.card {
+	border-top: 5px solid goldenrod; 
+	border-bottom: 5px solid goldenrod; 
+	box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+	background-color: #3B5249;
+   
+}
+
+h2 {
+    text-align: center;
+
+}
+.slideshow-container {
+	max-width: 1000px;
+	margin: auto;
+    position: static;
+}
+
+.dot-1 {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: darkslategray;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.dot-2 {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: darkslategray;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.dot-3 {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: darkslategray;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.dot-4 {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: darkslategray;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: goldenrod;
+}
+
+#imageSlide{
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+	border: 2px solid goldenrod; 
+}
+
+#imageSlide-1 {
+	width: 100%;
+	height: 50%;
+	object-fit: fill;
+	border: 2px solid goldenrod; 
+}
+
+aside {
+	float: right;
+	width: 25%;
+	padding-left: 20px;
+	color: goldenrod;
+	
+}
+
+.profile header {
+	text-align: center;
+    font-weight: bold;
+}
+
+.profile img {
+	width: 120px;
+    border-radius: 30%;
+}
+
+#nama{
+padding-top: 10px;
+font-size: larger;
+    font-family: serif;
+}
+
+.info{
+    text-align: left;
+    color: goldenrod;
+    font-family: serif;
+}
+
+footer {
+   color: goldenrod;
+   padding: 2px;
+   background-color: darkblue;
+   text-align: center;
+   font-weight: bold;
+   font-family: serif;
+	font-size: 10px;
+}
+
+
+@media screen and (max-width: 1000px) {
+	.content,
+   aside {
+       width: 100%;
+       padding: 0px;
+   }
+}
